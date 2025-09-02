@@ -12,7 +12,6 @@ import {
 import {
   PhantomWalletAdapter,
   SolflareWalletAdapter,
-  BackpackWalletAdapter,
   BraveWalletAdapter,
   CoinbaseWalletAdapter,
 } from '@solana/wallet-adapter-wallets'
@@ -178,7 +177,6 @@ export const WalletContextProvider = ({ children }) => {
     () => [
       new PhantomWalletAdapter(),
       new SolflareWalletAdapter(),
-      new BackpackWalletAdapter(),
       new BraveWalletAdapter(),
       new CoinbaseWalletAdapter(),
     ],
