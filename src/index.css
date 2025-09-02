@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-textPrimary;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-surface/80 backdrop-blur-lg border border-surfaceLight;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 text-white font-medium px-6 py-3 rounded-lg transition-colors duration-150;
+  }
+
+  .btn-secondary {
+    @apply bg-surface hover:bg-surfaceLight text-textPrimary border border-surfaceLight font-medium px-6 py-3 rounded-lg transition-colors duration-150;
+  }
+
+  .card {
+    @apply bg-surface border border-surfaceLight rounded-xl p-6;
+  }
+}
