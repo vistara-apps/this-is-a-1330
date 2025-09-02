@@ -1,0 +1,20 @@
+[package]
+name = "solbet-chain"
+version = "0.1.0"
+edition = "2021"
+description = "SOLBet Chain - A decentralized betting platform on Solana"
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+solana-program = "1.17.0"
+thiserror = "1.0.50"
+borsh = "0.10.3"
+borsh-derive = "0.10.3"
+spl-token = { version = "4.0.0", features = ["no-entrypoint"] }
+spl-associated-token-account = { version = "2.2.0", features = ["no-entrypoint"] }
+
+[lib]
+crate-type = ["cdylib", "lib"]
+

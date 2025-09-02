@@ -18,6 +18,7 @@ export default {
         textPrimary: 'hsl(0, 0%, 95%)',
         textSecondary: 'hsl(0, 0%, 70%)',
         textMuted: 'hsl(0, 0%, 50%)',
+        border: 'hsl(220, 15%, 16%)',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
